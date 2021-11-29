@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SharedPreferencesAndThemes" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="backgroundColor">@color/grey</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--  Custom Styles   -->
+    <style name="Custom.Light" parent="Theme.SharedPreferencesAndThemes">
+        <!-- Primary text color -->
+        <item name="colorPrimary">@color/black</item>
+        <!-- Secondary text color -->
+        <item name="colorSecondary">@color/grey_700</item>
+
+        <!-- Content background -->
+        <item name="backgroundColor">@color/grey</item>
+        <!-- ActionBar background -->
+        <item name="android:background">@color/grey_500</item>
+
+        <!-- StatusBar background -->
+        <item name="colorPrimaryVariant">@color/grey</item>
+        <!-- StatusBar icons color -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Custom.Night" parent="Custom.Light">
+        <!-- Primary text color -->
+        <item name="colorPrimary">@color/white</item>
+        <!-- Secondary text color -->
+        <item name="colorSecondary">@color/grey</item>
+
+        <!-- Content background -->
+        <item name="backgroundColor">@color/grey_700</item>
+        <!-- ActionBar background -->
+        <item name="android:background">@color/grey_500</item>
+
+        <!-- StatusBar background -->
+        <item name="colorPrimaryVariant">@color/grey_700</item>
+        <!-- StatusBar icons color -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
