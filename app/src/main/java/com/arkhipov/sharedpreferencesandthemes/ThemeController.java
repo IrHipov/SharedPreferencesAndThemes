@@ -13,7 +13,7 @@ public class ThemeController {
         sharedPreferences = context.getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
     }
 
-    public void switchThemMode(boolean turnOnNightMode) {
+    public void switchThemeMode(boolean turnOnNightMode) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean(SP_NIGHT_MODE, turnOnNightMode);
         editor.apply(); // or commit(), it's same;
